@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
           children: [
             TextButton(onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp1()));
-            }, child: Text('Assignment-1'))
+            }, child: Text('  Assignment-1'))
           ],
         ),
 
