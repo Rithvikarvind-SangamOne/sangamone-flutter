@@ -1,22 +1,14 @@
-import 'package:app2/second_screen.dart';
+import 'package:app2/Transfer Data/second_screen.dart';
 import 'package:flutter/material.dart';
 
-/*
-void main() {
-  runApp(MaterialApp(
-    home: MyApp(),
-  ));
-}
-*/
-
-class MyApp1 extends StatefulWidget {
-  const MyApp1({Key? key}) : super(key: key);
+class First extends StatefulWidget {
+  const First({Key? key}) : super(key: key);
 
   @override
-  _MyApp1State createState() => _MyApp1State();
+  _FirstState createState() => _FirstState();
 }
 
-class _MyApp1State extends State<MyApp1> {
+class _FirstState extends State<First> {
   TextEditingController tec1 = TextEditingController();
   TextEditingController tec2 = TextEditingController();
   TextEditingController tec3 = TextEditingController();

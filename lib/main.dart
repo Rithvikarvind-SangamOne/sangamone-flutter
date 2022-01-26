@@ -1,5 +1,9 @@
-import 'package:app2/second_screen.dart';
-import 'package:app2/first_screen.dart';
+import 'package:app2/Hello.dart';
+import 'package:app2/MyApp4.dart';
+import 'package:app2/MyFamily.dart';
+import 'package:app2/Transfer Data/first_screen.dart';
+import 'package:app2/dog_cat.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,14 +29,27 @@ class _MyAppState extends State<MyApp> {
         title: Text('Learning Flutter'),
       ),
       body: Container(
-        child: Column(
-          children: [
-            TextButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp1()));
-            }, child: Text('  Assignment-1'))
-          ],
+        child: Center(
+          child: Column(
+            children: [
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => First()));
+              }, child: Text('Assignment-1',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Sound()));
+              }, child: Text('Assignment-2',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp2()));
+              }, child: Text('Assignment-3',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp3()));
+              }, child: Text('Assignment-4',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp4()));
+              }, child: Text('Assignment-5',style: TextStyle(fontSize: 20,color: Colors.black),)),
+            ],
+          ),
         ),
-
       ),
     );
   }
