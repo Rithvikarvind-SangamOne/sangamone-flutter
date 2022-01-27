@@ -1,10 +1,15 @@
-import 'package:app2/Hello.dart';
-import 'package:app2/MyApp4.dart';
+import 'package:app2/Cricketers.dart';
+import 'package:app2/Chessboard.dart';
 import 'package:app2/MyFamily.dart';
 import 'package:app2/Transfer Data/first_screen.dart';
 import 'package:app2/dog_cat.dart';
+import 'package:app2/rules.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:app2/coins.dart';
+import 'package:app2/Movement.dart';
+import 'package:app2/MyApp8.dart';
+import 'package:app2/MyApp9.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -26,7 +31,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Learning Flutter'),
+        title: Text('Assignments - RithvikArvind'),
+        centerTitle: true,
       ),
       body: Container(
         child: Center(
@@ -34,19 +40,35 @@ class _MyAppState extends State<MyApp> {
             children: [
               TextButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) => First()));
-              }, child: Text('Assignment-1',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              }, child: Text('A1 - Transfer Data',style: TextStyle(fontSize: 20,color: Colors.black),)),
               TextButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) => Sound()));
-              }, child: Text('Assignment-2',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              }, child: Text('A2 - Animal Sound',style: TextStyle(fontSize: 20,color: Colors.black),)),
               TextButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp2()));
-              }, child: Text('Assignment-3',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              }, child: Text('A3 - MyFamily',style: TextStyle(fontSize: 20,color: Colors.black),)),
               TextButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp3()));
-              }, child: Text('Assignment-4',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              }, child: Text('A4 - Cricketers',style: TextStyle(fontSize: 20,color: Colors.black),)),
               TextButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp4()));
-              }, child: Text('Assignment-5',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              }, child: Text('A5 - Chessboard',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp5()));
+              }, child: Text('A6 - Chessboard with coins',
+                style: TextStyle(fontSize: 20,color: Colors.black),)),
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp6()));
+              }, child: Text('A7 - Movement of coins',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp7()));
+              }, child: Text('A8 - Movement of coins with actual rules',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp8()));
+              }, child: Text('A9',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp9()));
+              }, child: Text('A10',style: TextStyle(fontSize: 20,color: Colors.black),)),
             ],
           ),
         ),

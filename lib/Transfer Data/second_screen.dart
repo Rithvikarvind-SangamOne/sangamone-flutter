@@ -1,3 +1,4 @@
+import 'package:app2/main.dart';
 import 'package:flutter/material.dart';
 
 class Second extends StatefulWidget {
@@ -24,14 +25,26 @@ class _SecondState extends State<Second> {
         title: Text('Second screen'),
         centerTitle: true,
       ),
-      body: Container(
-        child: Column(
-          children: [
-            Text('Name: '+widget.item1,style: TextStyle(fontSize: 30),),
-            Text('Phone no: '+widget.item2,style: TextStyle(fontSize: 30),),
-            Text('Email id: '+widget.item3,style: TextStyle(fontSize: 30),),
-            Text('Place: '+widget.item4,style: TextStyle(fontSize: 30),),
-          ],
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(10),
+          child: Column(
+            children: [
+              SizedBox(height: 20,),
+              Text('Name: '+widget.item1,style: TextStyle(fontSize: 30),),
+              Text('Phone no: '+widget.item2,style: TextStyle(fontSize: 30),),
+              Text('Email id: '+widget.item3,style: TextStyle(fontSize: 30),),
+              Text('Place: '+widget.item4,style: TextStyle(fontSize: 30),),
+              SizedBox(height: 30,),
+              RaisedButton(onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>MyApp()));
+              },child: Text('Back',style: TextStyle(fontSize: 20,color: Colors.white),),
+              color: Colors.blue,
+              shape: new RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),)
+            ],
+          ),
         ),
       ),
     );
