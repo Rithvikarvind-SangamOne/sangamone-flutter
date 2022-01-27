@@ -62,7 +62,8 @@ class _MyAppState extends State<MyApp> {
               }, child: Text('A7 - Movement of coins',style: TextStyle(fontSize: 20,color: Colors.black),)),
               TextButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp7()));
-              }, child: Text('A8 - Movement of coins with actual rules',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              }, child: Text('A8 - Movement of coins with actual rules',textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 20,color: Colors.black),)),
               TextButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp8()));
               }, child: Text('A9',style: TextStyle(fontSize: 20,color: Colors.black),)),
