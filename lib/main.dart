@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
                 style: TextStyle(fontSize: 20,color: Colors.black),)),
               TextButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp8()));
-              }, child: Text('A9',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              }, child: Text('A9 - Hello World',style: TextStyle(fontSize: 20,color: Colors.black),)),
               TextButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp9()));
               }, child: Text('A10',style: TextStyle(fontSize: 20,color: Colors.black),)),
