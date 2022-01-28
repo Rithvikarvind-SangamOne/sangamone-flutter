@@ -8,8 +8,30 @@ class MyApp8 extends StatefulWidget {
 }
 
 class _MyApp8State extends State<MyApp8> {
+  String name = 'Hello World';
+  int time = 30;
+
+  @override
+  void initState() {
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            children: [
+              SizedBox(height: 20,),
+              Text(name,style: TextStyle(fontSize: 10),),
+              Text(name,style: TextStyle(fontSize: 30),),
+              Text(name,style: TextStyle(fontSize: 50),),
+              Text(name,style: TextStyle(fontSize: 30),),
+              Text(name,style: TextStyle(fontSize: 10),),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
