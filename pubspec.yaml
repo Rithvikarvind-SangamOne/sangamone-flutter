@@ -50,6 +50,18 @@ flutter:
   assets:
    - assets/Dog.jpeg
    - assets/Cat.jpeg
+   - assets/Rook.jpeg
+   - assets/Horse.jpeg
+   - assets/Bishop.jpeg
+   - assets/King.jpeg
+   - assets/Queen.jpeg
+   - assets/Pawn.jpeg
+   - assets/Rook2.jpeg
+   - assets/Pawn2.jpeg
+   - assets/Horse2.jpeg
+   - assets/Bishop2.jpeg
+   - assets/Queen2.jpeg
+   - assets/King2.jpeg
    - assets/audio/Dog-barking.mp3
    - assets/audio/Cat-meow.mp3
 
