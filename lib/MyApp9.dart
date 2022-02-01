@@ -10,6 +10,15 @@ class MyApp9 extends StatefulWidget {
 class _MyApp9State extends State<MyApp9> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Search'),
+        actions: [
+          IconButton(onPressed: () {},
+              icon: Icon(Icons.search),),
+        ],
+      ),
+    );
   }
 }
+

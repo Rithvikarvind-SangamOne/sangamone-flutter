@@ -10,6 +10,7 @@ import 'package:app2/coins.dart';
 import 'package:app2/Movement.dart';
 import 'package:app2/MyApp8.dart';
 import 'package:app2/MyApp9.dart';
+import 'package:app2/leaders.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -69,7 +70,11 @@ class _MyAppState extends State<MyApp> {
               }, child: Text('A9 - Hello World',style: TextStyle(fontSize: 20,color: Colors.black),)),
               TextButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp9()));
-              }, child: Text('A10',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              }, child: Text('A10 - Search Bar Field in AppBar',style: TextStyle(fontSize: 20,color: Colors.black),)),
+              TextButton(onPressed: () {
+                Navigator.push(context,MaterialPageRoute(builder: (context) => Leaders()));
+              },
+                  child: Text('A-11 - Leaders Name',style: TextStyle(color: Colors.black,fontSize: 20),))
             ],
           ),
         ),
